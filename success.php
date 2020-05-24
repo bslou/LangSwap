@@ -1,0 +1,1 @@
+<html><head><title>LangSwap - Success in Sending</title><link rel = "icon" href = "https://freesvg.org/img/internet-web-browser.png"><style></style></head><body><button onclick = "ro();">Go Back</button><center><h1 style = "display:inline;">Form Sent!</h1></center><script>function ro(){window.location = "index.php";}</script></body></html>
