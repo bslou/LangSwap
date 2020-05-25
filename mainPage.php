@@ -3,6 +3,7 @@
 <head>
 <title>LangSwap - MainPage</title>
     <link rel = "icon" href = "https://freesvg.org/img/internet-web-browser.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
       .ro{
         margin-left: 10px;
@@ -180,14 +181,14 @@
     }
     .rect{
       width: 70%;
-      height: 300px;
+      height: 330px;
       border-radius: 20px 20px 20px 20px;
       box-shadow: 0px 0px 10px gray;
       transition: transform .2s;
       background-color: white;
     }
     .rect:hover{
-      cursor: pointer;
+      /*cursor: pointer;*/
       transform: scale(1.05);
     }
     .sticky{
@@ -200,6 +201,73 @@
       background-image: url('https://image.freepik.com/free-photo/abstract-art-background-light-blue-white-colors-watercolor-painting-canva_113767-2321.jpg');
       background-size: 100% 100%;
     }
+    .topL{
+        display:flex;
+        border: 1px solid black;
+        border-radius: 50%;
+        width:100px;
+        text-align: center;
+        height:100px;
+        margin-left: 15px;
+      }
+      .topL:hover{
+        border:2px solid black;
+      }
+      .new{
+        
+        border: none;
+        background-color: lightblue;
+        width: 100px;
+        height: 30px;
+        font-family: serif;
+        text-align: center;
+        font-size: 14pt;
+      }
+      .new:hover{
+        cursor: pointer;
+        opacity:0.5;
+      }
+      .alo{
+        border: none;
+        float: left;
+
+        display: inline;
+        max-width: 300px;
+        height: 500px;
+      }
+      .bl{
+        color: black;
+      }
+      .pmo{
+        float: right;
+        display: inline;
+        margin-right: 10px;
+        margin-top: -20px;
+        border: 1px solid lightgreen;
+        border-radius: 50%;
+        width: 30px;
+        text-align: center;
+        background-color: lightgreen;
+      }
+      .pmo:hover{
+        opacity: 0.7;
+      }
+      .fd{
+        border-radius: 50%; width: 90px; height: 63px
+      }
+      h2{
+        font-weight: 900;
+      }
+      .noe{
+        color: green;
+        background-color: lightgreen;
+        padding: 1px;
+        font-family: cursive;
+        opacity:0.8;
+      }
+      .noe:hover{
+        opacity:1;
+      }
 </style>
 </head>
 
@@ -215,7 +283,7 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<div style = "position: absolute; left: 33%; top: 2px;"><form method = "post"><input type = "text" style = "display: inline; padding: 8px;" class = "sear" placeholder = "Search people..."><button class = "bar">&#128270;</button></form></div>
+<div style = "position: absolute; left: 34.5%; top: 2px;"><form method = "post"><input type = "text" style = "display: inline; padding: 8px;" class = "sear" placeholder = "Search people..."><button class = "bar">&#128270;</button></form></div>
 <a href = 'profile.php' class = 'lo'>👤</a>
 <a href = '#' class = 'lo' id='myBtn'>⚙️</a>
 <a href = '#' class = 'lo'>🔔</a>
@@ -249,8 +317,32 @@ function googleTranslateElementInit() {
 </table>
 </center>
 <br>
-<center><a href = "#"><div class = "rect"></div></a><br><br><a href = "#"><div class = "rect"></div></a><br><br><a href = "#"><div class = "rect"></div></a><br><br><a href = "#"><div class = "rect"></div></a></center>
+<center><div class = "rect"> 
+<!--<center><h2>Name</h2></center><center><p class = "alo"><b>Description</b><br> Hi Bye Peace................................................................. ........................................................ ..................................................... ......................................................</p></center><center><a href = "#" class="topL"></a> <br><button style = "display: flex; margin-left: 15px;" class = "new">Lang Swap</button><p>Native Language &rarr;</p><p>Language To Learn &rarr;</p></center><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a>-->
 
+<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: scroll; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">LangSwap</a></center>
+
+
+
+
+</div><br><br>
+<center><div class = "rect"> 
+<!--<center><h2>Name</h2></center><center><p class = "alo"><b>Description</b><br> Hi Bye Peace................................................................. ........................................................ ..................................................... ......................................................</p></center><center><a href = "#" class="topL"></a> <br><button style = "display: flex; margin-left: 15px;" class = "new">Lang Swap</button><p>Native Language &rarr;</p><p>Language To Learn &rarr;</p></center><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a>-->
+
+<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: scroll; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">LangSwap</a></center>
+
+
+
+
+</div><br><br><center><div class = "rect"> 
+<!--<center><h2>Name</h2></center><center><p class = "alo"><b>Description</b><br> Hi Bye Peace................................................................. ........................................................ ..................................................... ......................................................</p></center><center><a href = "#" class="topL"></a> <br><button style = "display: flex; margin-left: 15px;" class = "new">Lang Swap</button><p>Native Language &rarr;</p><p>Language To Learn &rarr;</p></center><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a>-->
+
+<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: auto; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">LangSwap</a></center>
+
+
+
+
+</div>
 
 <br><br><br><br><hr>
 <center><p style = "opacity: 0.5; font-size: 9pt;">© 2020, LangSwap.com, Inc. or its affiliates</p></center><br><br><br>
