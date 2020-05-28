@@ -36,6 +36,7 @@
         color: white;
         display: inline;
         font-size: 12pt;
+        border: none;
       }
       .but:hover{
         cursor: pointer;
@@ -54,6 +55,7 @@
         color: black;
         display: inline;
         font-size: 12pt;
+        border: 0.2px solid gray;
       }
       .buto:hover{
         cursor: pointer;
@@ -94,6 +96,7 @@
         font-family: serif;
         z-index: 0;
         margin: 4px;
+        background-color: white;
       }
       
       .buo{
@@ -163,9 +166,11 @@
         border-collapse: collapse;
         border-radius: 1em;
       }
+      /*
       table:hover{
         cursor:pointer;
       }
+      */
       td{
         text-align: center;
         font-size: 16pt;
@@ -800,7 +805,7 @@ function googleTranslateElementInit() {
   <center><p style = "font-size: 20pt; color: brown; font-family: fantasy;"><b>Top 40 languages we have to offer!</b></p></center><br><center><table style = "float: right; margin-right: 18%;font-family: fantasy;"><tr><td>English</td><td>Spanish</td><td>French</td><td>German</td><td>Korean</td><td>Hebrew</td><td>Japanese</td><td>Irish</td></tr><tr><td>Italian</td><td>Farsi</td><td>Swedish</td><td>Finish</td><td>Hindi</td><td>Russian</td><td>Arabic</td><td>Mandarin</td></tr><tr><td>Portuguese</td><td>Vietnamese</td><td>Telugu</td><td>Bengali</td><td>Tamil</td><td>Urdu</td><td>Indonesian</td><td>Turkish</td></tr><tr><td>Cantonese</td><td>Norwegian</td><td>Dutch</td><td>Thai</td><td>Hungarian</td><td>Romanian</td><td>Czech</td><td>Greek</td></tr><tr><td>Bulgarian</td><td>Swahili</td><td>Hungarian</td><td>Polish</td><td>Danish</td><td>Afrikaans</td><td>Belarusian</td><td>Ukranian</td></tr></table></center><br><br><br><br><br><br><br><br><br><br><br><br><center><form action = "languageinfo.php"><button class = "buo">More info on languages</button></form></center><br><hr></div>
   <br><br>
   <div class="card" style = "float: left;">
-  <img src="https://researchoutreach.org/wp-content/uploads/2018/12/shutterstock_178324601.jpg" alt="Exchange with others" style="width:100%; height: 300px;">
+  <img src="https://researchoutreach.org/wp-content/uploads/2018/12/shutterstock_178324601.jpg" alt="Exchange with others" style="width:100%; height: 300px; border: 1px outset black;">
   <h1>Exchange Languages with Others</h1><br>
   <p>Learn different languages that you want to learn, while teaching others your native language!</p><br>
   <p><button onclick = "so();">Exchange</button></p>
@@ -818,8 +823,8 @@ function googleTranslateElementInit() {
   <p><button onclick = "shoo();">Language Book Shop</button></p>
 </div>
 <br><br><div class = "wrap2"><hr><br><br><center><h1>
-Our Online Language Book Shop</h1></center><br><br><center><img src = "https://news.gandi.net/wp-content/uploads/2017/09/2017_08_shop-1.jpg" alt = "shop" style = "width: 450px; height: 300px;"></center><br><br><center><button class = "buso" onclick = "shoq();">Check it out</button></center><br><br><hr></div><div class = "wrap5"><br><br><center><h1 style = "color: blue; font-family: monsterrat; letter-spacing: 1px; font-weight: 900;">Are you willing to go on the best journey?</h1></center><br><br><br><br><br><br><br><center><button class = "but" style = "float: center" onclick = "document.getElementById('modal-wrapper2').style.display='block'" title = "Join LangSwap">Get Started</button></center><br><br></div><hr><button style = "width: 100%; height: 50px; text-align: center; font-size: 13pt; color: white;" onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button><center><a href = "#" class = "level">#LoveIt</a><a href = "#" class = "level">#Languages</a><a href = "#" class = "level">#FoundIt</a><a href = "#" class = "level">#TryIt</a><a href = "#" class ="level">#Manyfriends</a><a href = "#" class = "level">#Best</a><a href = "#" class = "level">#Xoxo</a><a href = "#" class = "level">#Learnit</a><a href = "#" class = "level" >#Shopit</a><a href = "#" class = "level">#LangSwap</a></center><hr><div class = "wrap6"><br><br><center>
-<table cellspacing="0" cellpadding="0" style = "border: none; border-collapse: collapse;"><tr><th style = "border: none; padding: 7px;">General</th><th style = "border: none; padding: 7px;">Browse</th></tr><tr><td style = "border: none; padding: 7px;"><a href = "#" class = "links" onclick = "document.getElementById('modal-wrapper2').style.display='block'" title = "Sign-up">Sign-Up</a></td><td style = "border: none; padding: 7px;"><a href = "privacy.php" class = "links" title = "Privacy">Privacy</a></td></tr><tr><td style = "border: none;padding: 7px;"><a href = "#" class = "links" onclick = "document.getElementById('modal-wrapper').style.display='block'" title = "Log-in">Log-in</a></td><td style = "border: none; padding: 7px;"><a href = "blog.php" class = "links" title = "Blog">Blog</a></td></tr><tr><td style = "border: none; padding: 7px;"><a href = "#" class = "links" title = "More info">More info</a></td><td style = "border: none; padding: 7px;"><a href = "safety.php" class = "links">Safety</a></td></tr><tr><td style = "border: none; padding: 7px;"><a href = "#" class = "links" onclick = "document.getElementById('modal-wrapper3').style.display='block'">Contact Us</a></td><td style = "border: none; padding: 7px;"><a href = "help.php" class = "links">Help</a></td></tr><tr><td style = "border: none; padding: 7px;"><a href = "#abouT" class = "links" style = "scroll-behavior: smooth;">About</a></td></tr></table></center><br><br><hr></div><center><p style = "opacity: 0.5; font-size: 9pt;">© 2020, LangSwap.com, Inc. or its affiliates</p></center><br><br><br><br><br><br><br><br>
+Our Online Language Book Shop</h1></center><br><br><center><img src = "https://news.gandi.net/wp-content/uploads/2017/09/2017_08_shop-1.jpg" alt = "shop" style = "width: 450px; height: 300px;"></center><br><br><center><button class = "buso" onclick = "shoq();">Check it out</button></center><br><br><hr></div><div class = "wrap5"><br><br><center><h1 style = "color: blue; font-family: monsterrat; letter-spacing: 1px; font-weight: 900;">Are you willing to go on the best journey?</h1></center><br><br><br><br><br><br><br><center><button class = "but" style = "float: center" onclick = "document.getElementById('modal-wrapper2').style.display='block'" title = "Join LangSwap">Get Started</button></center><br><br></div><hr><button style = "width: 100%; height: 50px; text-align: center; font-size: 13pt; color: white;" onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button><center><a href = "#lan" class = "level">#LoveIt</a><a href = "#fo" class = "level" id = "lan">#Languages</a><a href = "#lan" class = "level" id = "fo">#FoundIt</a><a href = "#lan" class = "level">#TryIt</a><a href = "#lan" class ="level">#Manyfriends</a><a href = "#lan" class = "level">#Best</a><a href = "#lan" class = "level">#Xoxo</a><a href = "#lan" class = "level">#Learnit</a><a href = "#lan" class = "level" >#Shopit</a><a href = "#lan" class = "level">#LangSwap</a></center><hr><div class = "wrap6"><br><br><center>
+<table cellspacing="0" cellpadding="0" style = "border: none; border-collapse: collapse;"><tr><th style = "border: none; padding: 7px;">General</th><th style = "border: none; padding: 7px;">Browse</th></tr><tr><td style = "border: none; padding: 7px;"><a href = "#" class = "links" onclick = "document.getElementById('modal-wrapper2').style.display='block'" title = "Sign-up">Sign-Up</a></td><td style = "border: none; padding: 7px;"><a href = "privacy.php" class = "links" title = "Privacy">Privacy</a></td></tr><tr><td style = "border: none;padding: 7px;"><a href = "#" class = "links" onclick = "document.getElementById('modal-wrapper').style.display='block'" title = "Log-in">Log-in</a></td><td style = "border: none; padding: 7px;"><a href = "blog.php" class = "links" title = "Blog">Blog</a></td></tr><tr><td style = "border: none; padding: 7px;"><a href = "moreinfo.php" class = "links" title = "More info">More info</a></td><td style = "border: none; padding: 7px;"><a href = "safety.php" class = "links">Safety</a></td></tr><tr><td style = "border: none; padding: 7px;"><a href = "#" class = "links" onclick = "document.getElementById('modal-wrapper3').style.display='block'">Contact Us</a></td><td style = "border: none; padding: 7px;"><a href = "help.php" class = "links">Help</a></td></tr><tr><td style = "border: none; padding: 7px;"><a href = "#abouT" class = "links" style = "scroll-behavior: smooth;">About</a></td></tr></table></center><br><br><hr></div><center><p style = "opacity: 0.5; font-size: 9pt;">© 2020, LangSwap.com, Inc. or its affiliates</p></center><br><br><br><br><br><br><br><br>
 <center>
 <div class = "action" onclick = "actionToggle();" title = "Share on social media">
       <span>+</span>
