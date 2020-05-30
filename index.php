@@ -910,6 +910,9 @@ function checkforblank(){
     if (document.getElementById("uname").value == ""){
       errormessage += "No username entered <br>";
       document.getElementById("uname").style.borderColor = "red";
+    }else if (document.getElementById("uname").value.length < 4){
+      errormessage += "Username must be at least 4 characters <br>";
+      document.getElementById("pass").style.borderColor = "red";
     }else{
       document.getElementById("uname").style.borderColor = "lightgray";
     }
@@ -922,11 +925,17 @@ function checkforblank(){
     if (document.getElementById("email").value == ""){
       errormessage += "No email entered <br>";
       document.getElementById("email").style.borderColor = "red";
+    }else if (!(/\S+@\S+\.\S+/.test(document.getElementById("email").value))){
+      errormessage += "Not an email <br>";
+      document.getElementById("email").style.borderColor = "red";
     }else{
       document.getElementById("email").style.borderColor = "lightgray";
     }
     if (document.getElementById("pass").value == ""){
       errormessage += "No password entered";
+      document.getElementById("pass").style.borderColor = "red";
+    }else if (document.getElementById("pass").value.length < 6){
+      errormessage += "Password must be at least 6 characters";
       document.getElementById("pass").style.borderColor = "red";
     }else{
       document.getElementById("pass").style.borderColor = "lightgray";
@@ -968,6 +977,9 @@ function checkforblankTh(){
   if (document.getElementById("concern").value == ""){
     document.getElementById("concern").style.border = "1px solid red";
     errormessageTh += "No problem asked..."
+  }else if(document.getElementById("concern").value.length < 20){
+    document.getElementById("concern").style.border = "1px solid red";
+    errormessageTh += "Must be at least 20 characters..."
   }else{
     document.getElementById("concern").style.borderColor = "lightgray";
   }
