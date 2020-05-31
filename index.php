@@ -2,6 +2,13 @@
   <head>
     <title>LangSwap - Front Page</title>
     <link rel = "icon" href = "https://freesvg.org/img/internet-web-browser.png">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="keywords"    content="language, swapping, exchanging, friends, Find other people that can teach you your desired foreign language" />
+	<meta name="description" content="Create an account and learn and exchange languages with other people from around the world through calls and chatting. " />
+  <meta name="author"      content="LangSwap Inc." />
+	<meta name="dcterms.rights"   content="Copyright &copy; 2020 LangSwap, All Right Reserved" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       #xYz{
         scroll-behavior: smooth;
@@ -27,7 +34,7 @@
         background-color: #F5F5F5;
       }
       .but{
-        width: 130px;
+        width: 60px;
         height: auto;
         text-align: center;
         border-radius: 20px;
@@ -45,8 +52,27 @@
       .but:focus{
         outline: none;
       }
-      .buto{
+      .but2{
         width: 130px;
+        height: auto;
+        text-align: center;
+        border-radius: 20px;
+        height: 45px;
+        background-color: lightblue;
+        color: white;
+        display: inline;
+        font-size: 12pt;
+        border: none;
+      }
+      .but2:hover{
+        cursor: pointer;
+        opacity:0.7;
+      }
+      .but2:focus{
+        outline: none;
+      }
+      .buto{
+        width: 60px;
         height: auto;
         text-align: center;
         border-radius: 20px;
@@ -88,8 +114,8 @@
         
         display: inline;
         height: 100px;
-        width:400px;
-        font-size:13pt;
+        width:300px;
+        font-size:10pt;
         border-radius: 10px;
         box-shadow: 5pt 5pt 5pt gray;
         transition: transform .2s;
@@ -165,6 +191,7 @@
         border: 1px solid black;
         border-collapse: collapse;
         border-radius: 1em;
+        width: auto;
       }
       /*
       table:hover{
@@ -553,6 +580,118 @@
         width: 100%;
         z-index: 1;
       }
+      .img-banner{
+        display: none;
+      }
+       .lsw{
+        display: inline; 
+        letter-spacing: -4px; 
+        font-size: 20pt; 
+        color: black;
+      }
+      .fosh{
+        width: 450px; 
+        height: 300px;
+      }
+      .banner{
+        display: inline;
+      }
+      @media only screen and (min-width: 1100px){
+        .img-banner{
+          display: inline;
+        }
+        .lsw{
+          font-size: 28pt;
+        }
+        .buro{
+          font-size: 13pt;
+          width: 400px;
+        }
+        
+      }
+      .yoyo{
+        float: right; 
+        margin-right: 18%;
+        font-family: fantasy;
+        font-size: 12pt;
+      }
+      @media only screen and (min-width: 700px){
+        .but{
+          width: 130px;
+        }
+        .buto{
+          width: 130px;
+        }
+      }
+      
+      @media only screen and (max-width: 390px){
+        .but{
+          width: 25px;
+        }
+        .buto{
+          width: 25px;
+        }
+        .fosh{
+          width: 300px;
+        }
+        
+      }
+      @media only screen and (max-width: 1250px){
+        .card{
+          max-width: 350px;
+          font-size: 11pt;
+        }
+        .card button{
+          font-size: 11pt;
+        }
+        .banner{
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 1050px){
+        .card{
+          max-width: 250px;
+          font-size: 10pt;
+        }
+        .card button{
+          font-size: 10pt;
+        }
+        
+      }
+      @media only screen and (max-width: 800px){
+        .buro{
+          font-size: 8pt;
+          width: 150px;
+        }
+        .card{
+          max-width: 120px;
+          font-size: 7pt;
+        }
+        .card button{
+          font-size: 7pt;
+        }
+        
+      }
+      @media only screen and (max-width: 500px){
+        .buro{
+          font-size: 6pt;
+          width: 120px;
+        }
+      }
+      @media only screen and (max-width: 500px){
+        .level{
+          font-size: 5pt;
+         
+        }
+      }
+      
+      @media only screen and (max-width: 390px){
+        .level{
+          font-size: 2pt;
+         
+        }
+      }
+     
       
     </style>
     
@@ -560,7 +699,7 @@
   <body>
   <!--<div style = "background: linear-gradient(to right, #C8ADDE, #8457A7, #C8ADDE);">-->
   <div class = "wrap4" id = "myHeader">
-  <p style = "display: inline; letter-spacing: -4px; font-size: 28pt; color: black;" class = "point">LangSwap</p><div class = "tooltip"><div id="google_translate_element" style = "float: left; margin-left: 10px;"></div>
+  <p class = "point lsw">LangSwap</p><div class = "tooltip"><div id="google_translate_element" style = "float: left; margin-left: 10px;"></div>
 
 <script type="text/javascript">
 function googleTranslateElementInit() {
@@ -570,7 +709,7 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-</div><div style = "position: absolute; left: 34.5%; top: 2px;"><form method = "post"><input type = "text" style = "display: inline; padding: 8px;" class = "sear" placeholder = "Search people..."><button class = "bar">&#128270;</button></form></div>
+</div><div style = "position: absolute; left: 34.5%; top: 2px;" class = "img-banner"><form method = "post"><input type = "text" style = "display: inline; padding: 8px;" class = "sear" placeholder = "Search people..."><button class = "bar">&#128270;</button></form></div>
 
     <button class = "but" style = "float: right; margin-top: 10px;" onclick = "document.getElementById('modal-wrapper2').style.display='block'">Join Now</button>
     <button class = "buto" style = "float: right; margin-top: 10px;" onclick="document.getElementById('modal-wrapper').style.display='block'">Log-in</button>
@@ -603,7 +742,7 @@ function googleTranslateElementInit() {
 <input type="text" placeholder="Enter Username" name="uname" class = "pkpk" id = "uname" Title = "Please fill out this field">
 <input type="text" placeholder="Enter Firstname" name="name" class = "pkpk" id = "fname" Title = "Please fill out this field">
 <input type="text" placeholder="Enter Email" name="email" class = "pkpk" id = "email" Title = "Please fill out this field">
-<input type="password" placeholder="Enter Password (At least 8 characters)" name="psw" class = "pkpk" id = "pass" Title = "Please fill out this field">
+<input type="password" placeholder="Enter Password (At least 6 characters)" name="psw" class = "pkpk" id = "pass" Title = "Please fill out this field">
 <center>
 <label for = "lang"><b>Native Language:</b></label> 
   <select style = "display: inline;" class = "ro" name = "lang" id = "lang1"><option value="EN" class="emoji"  selected>English</option>
@@ -802,7 +941,7 @@ function googleTranslateElementInit() {
   <button class = "buro" onclick = "locateT();"><b>Learn a new language</b> &rarr;</button><br><br>
   <button class = "buro" onclick = "locateTh();"><b>Shop for language books</b> &rarr;</button>
   </center><br><br><hr></div><div class = "wrap3"><br><br><br>
-  <center><p style = "font-size: 20pt; color: brown; font-family: fantasy;"><b>Top 40 languages we have to offer!</b></p></center><br><center><table style = "float: right; margin-right: 18%;font-family: fantasy;"><tr><td>English</td><td>Spanish</td><td>French</td><td>German</td><td>Korean</td><td>Hebrew</td><td>Japanese</td><td>Irish</td></tr><tr><td>Italian</td><td>Farsi</td><td>Swedish</td><td>Finish</td><td>Hindi</td><td>Russian</td><td>Arabic</td><td>Mandarin</td></tr><tr><td>Portuguese</td><td>Vietnamese</td><td>Telugu</td><td>Bengali</td><td>Tamil</td><td>Urdu</td><td>Indonesian</td><td>Turkish</td></tr><tr><td>Cantonese</td><td>Norwegian</td><td>Dutch</td><td>Thai</td><td>Hungarian</td><td>Romanian</td><td>Czech</td><td>Greek</td></tr><tr><td>Bulgarian</td><td>Swahili</td><td>Hungarian</td><td>Polish</td><td>Danish</td><td>Afrikaans</td><td>Belarusian</td><td>Ukranian</td></tr></table></center><br><br><br><br><br><br><br><br><br><br><br><br><center><form action = "languageinfo.php"><button class = "buo">More info on languages</button></form></center><br><hr></div>
+  <center><p style = "font-size: 20pt; color: brown; font-family: fantasy;"><b>Top 40 languages we have to offer!</b></p></center><br><center><div class = "banner"><table class = "yoyo"><tr><td>English</td><td>Spanish</td><td>French</td><td>German</td><td>Korean</td><td>Hebrew</td><td>Japanese</td><td>Irish</td></tr><tr><td>Italian</td><td>Farsi</td><td>Swedish</td><td>Finish</td><td>Hindi</td><td>Russian</td><td>Arabic</td><td>Mandarin</td></tr><tr><td>Portuguese</td><td>Vietnamese</td><td>Telugu</td><td>Bengali</td><td>Tamil</td><td>Urdu</td><td>Indonesian</td><td>Turkish</td></tr><tr><td>Cantonese</td><td>Norwegian</td><td>Dutch</td><td>Thai</td><td>Hungarian</td><td>Romanian</td><td>Czech</td><td>Greek</td></tr><tr><td>Bulgarian</td><td>Swahili</td><td>Hungarian</td><td>Polish</td><td>Danish</td><td>Afrikaans</td><td>Belarusian</td><td>Ukranian</td></tr></table></div></center><center><p id = "trade"></p></center><br><br><br><br><br><br><br><br><br><br><br><br><center><form action = "languageinfo.php"><button class = "buo">More info on languages</button></form></center><br><hr></div>
   <br><br>
   <div class="card" style = "float: left;">
   <img src="https://researchoutreach.org/wp-content/uploads/2018/12/shutterstock_178324601.jpg" alt="Exchange with others" style="width:100%; height: 300px; border: 1px outset black;">
@@ -823,8 +962,9 @@ function googleTranslateElementInit() {
   <p><button onclick = "shoo();">Language Book Shop</button></p>
 </div>
 <br><br><div class = "wrap2"><hr><br><br><center><h1>
-Our Online Language Book Shop</h1></center><br><br><center><img src = "https://news.gandi.net/wp-content/uploads/2017/09/2017_08_shop-1.jpg" alt = "shop" style = "width: 450px; height: 300px;"></center><br><br><center><button class = "buso" onclick = "shoq();">Check it out</button></center><br><br><hr></div><div class = "wrap5"><br><br><center><h1 style = "color: blue; font-family: monsterrat; letter-spacing: 1px; font-weight: 900;">Are you willing to go on the best journey?</h1></center><br><br><br><br><br><br><br><center><button class = "but" style = "float: center" onclick = "document.getElementById('modal-wrapper2').style.display='block'" title = "Join LangSwap">Get Started</button></center><br><br></div><hr><button style = "width: 100%; height: 50px; text-align: center; font-size: 13pt; color: white;" onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button><center><a href = "#lan" class = "level">#LoveIt</a><a href = "#fo" class = "level" id = "lan">#Languages</a><a href = "#lan" class = "level" id = "fo">#FoundIt</a><a href = "#lan" class = "level">#TryIt</a><a href = "#lan" class ="level">#Manyfriends</a><a href = "#lan" class = "level">#Best</a><a href = "#lan" class = "level">#Xoxo</a><a href = "#lan" class = "level">#Learnit</a><a href = "#lan" class = "level" >#Shopit</a><a href = "#lan" class = "level">#LangSwap</a></center><hr><div class = "wrap6"><br><br><center>
+Our Online Language Book Shop</h1></center><br><br><center><img src = "https://news.gandi.net/wp-content/uploads/2017/09/2017_08_shop-1.jpg" alt = "shop" class = "fosh"></center><br><br><center><button class = "buso" onclick = "shoq();">Check it out</button></center><br><br><hr></div><div class = "wrap5"><br><br><center><h1 style = "color: blue; font-family: monsterrat; letter-spacing: 1px; font-weight: 900;">Are you willing to go on the best journey?</h1></center><br><br><br><br><br><br><br><center><button class = "but2" style = "float: center" onclick = "document.getElementById('modal-wrapper2').style.display='block'" title = "Join LangSwap">Get Started</button></center><br><br></div><hr><button style = "width: 100%; height: 50px; text-align: center; font-size: 13pt; color: white;" onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button><center><a href = "#lan" class = "level">#LoveIt</a><a href = "#fo" class = "level" id = "lan">#Languages</a><a href = "#lan" class = "level" id = "fo">#FoundIt</a><a href = "#lan" class = "level">#TryIt</a><a href = "#lan" class ="level">#Manyfriends</a><a href = "#lan" class = "level">#Best</a><a href = "#lan" class = "level">#Xoxo</a><a href = "#lan" class = "level">#Learnit</a><a href = "#lan" class = "level" >#Shopit</a><a href = "#lan" class = "level">#LangSwap</a></center><hr><div class = "wrap6"><br><br><center>
 <table cellspacing="0" cellpadding="0" style = "border: none; border-collapse: collapse;"><tr><th style = "border: none; padding: 7px;">General</th><th style = "border: none; padding: 7px;">Browse</th></tr><tr><td style = "border: none; padding: 7px;"><a href = "#" class = "links" onclick = "document.getElementById('modal-wrapper2').style.display='block'" title = "Sign-up">Sign-Up</a></td><td style = "border: none; padding: 7px;"><a href = "privacy.php" class = "links" title = "Privacy">Privacy</a></td></tr><tr><td style = "border: none;padding: 7px;"><a href = "#" class = "links" onclick = "document.getElementById('modal-wrapper').style.display='block'" title = "Log-in">Log-in</a></td><td style = "border: none; padding: 7px;"><a href = "blog.php" class = "links" title = "Blog">Blog</a></td></tr><tr><td style = "border: none; padding: 7px;"><a href = "moreinfo.php" class = "links" title = "More info">More info</a></td><td style = "border: none; padding: 7px;"><a href = "safety.php" class = "links">Safety</a></td></tr><tr><td style = "border: none; padding: 7px;"><a href = "#" class = "links" onclick = "document.getElementById('modal-wrapper3').style.display='block'">Contact Us</a></td><td style = "border: none; padding: 7px;"><a href = "help.php" class = "links">Help</a></td></tr><tr><td style = "border: none; padding: 7px;"><a href = "#abouT" class = "links" style = "scroll-behavior: smooth;">About</a></td></tr></table></center><br><br><hr></div><center><p style = "opacity: 0.5; font-size: 9pt;">© 2020, LangSwap.com, Inc. or its affiliates</p></center><br><br><br><br><br><br><br><br>
+<!--
 <center>
 <div class = "action" onclick = "actionToggle();" title = "Share on social media">
       <span>+</span>
@@ -837,6 +977,7 @@ Our Online Language Book Shop</h1></center><br><br><center><img src = "https://n
       </ul>
     </div>
     </center>
+    -->
     
 <script>
   function join(){
@@ -894,6 +1035,11 @@ function so(){
 
 </div>
 <script>
+if (screen.width < 1250){
+  document.getElementById("trade").innerHTML = "English, Spanish, Korean, French, Italian<br>Russian, Portuguese, Japanese, Mandarin, Cantonese";
+}
+</script>
+<script>
 function locateO(){
   window.location = "search.php";
 }
@@ -912,6 +1058,9 @@ function checkforblank(){
       document.getElementById("uname").style.borderColor = "red";
     }else if (document.getElementById("uname").value.length < 4){
       errormessage += "Username must be at least 4 characters <br>";
+      document.getElementById("pass").style.borderColor = "red";
+    }else if(/\s/g.test(document.getElementById("uname").value) || /[,\-]/.test(document.getElementById("uname").value)){
+      errormessage += "No spaces or commas allowed <br>";
       document.getElementById("pass").style.borderColor = "red";
     }else{
       document.getElementById("uname").style.borderColor = "lightgray";
@@ -1027,5 +1176,25 @@ function myFunction() {
   }
 }
 </script>
+<script>
+if (screen.width <= 768){
+  alert("You should download our LangSwap app!");
+}
+</script>
   </body>
 </html>
+<!--       _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~-->
+ <!--
+          (....)
+            --
+            __
+          (....)
+            ||
+            \\
+            ||
+            /\
+            WOW
+            -->
