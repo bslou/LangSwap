@@ -5,7 +5,7 @@
 
 <style>
 .box{
-  display: inline;  
+  display: block;  
   overflow: auto;
   width: 60%;
   height: 60%;
