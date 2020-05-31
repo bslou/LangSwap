@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>LangSwap - Shop: Register</title>
+<title>LangSwap - Shop</title>
 <link rel = "icon" href = "https://freesvg.org/img/internet-web-browser.png">
 <style>
 #slides {
@@ -100,6 +100,7 @@
 a{
   text-decoration: none;
   color: blue;
+  font-size: 9pt;
 }
 a:hover{
   text-decoration: underline;
@@ -107,10 +108,29 @@ a:hover{
 hr{
   opacity:0.4;
 }
+.lsw{
+  display: inline;
+   letter-spacing: -4px; 
+   font-size: 20pt; 
+   color: black; 
+   position: absolute; 
+   top: -15px; 
+   left: 0;
+}
+@media only screen and (min-width: 1100px){
+        
+        .lsw{
+          font-size: 28pt;
+          top: -30px;
+        }
+        a{
+          font-size: 12pt;
+        }
+}
 </style>
 </head>
 <body>
-<p style = "display: inline; letter-spacing: -4px; font-size: 28pt; color: black; position: absolute; top: -40px; left: 0;" class = "point">LangSwap</p>
+<p class = "point lsw">LangSwap</p>
 <div><form><center><select class = "ol"><option>Any</option><option>Audible</option><option>Art</option><option>Books</option><option>Dictionaries</option><option>Poems</option></select><input type = "text" class = "sear" placeholder = "Search product..."><button class = "but">Search</button></form></div><hr><br>
 <center>
 <ul id="slides">
