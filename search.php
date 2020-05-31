@@ -2,7 +2,7 @@
 <head>
 <title>LangSwap - Search for Friends</title>
 <link rel = "icon" href = "https://freesvg.org/img/internet-web-browser.png">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 .op{
   display: inline;
@@ -46,11 +46,36 @@
 a{
   text-decoration: none;
 }
+ .lsw{
+       display: inline; 
+       letter-spacing: -4px; 
+       font-size: 20pt; 
+       color: black;
+        position: absolute; 
+        top: -15px;
+        
+}
+@media only screen and (max-width: 800px){
+  .sear{
+    width: 100px;
+    font-size: 9pt;
+  }
+  .but{
+    font-size: 8pt;
+  }
+}
+@media only screen and (min-width: 1100px){
+        
+        .lsw{
+          font-size: 28pt;
+          top: -30px;
+        }
+}
 </style>
 </head>
 
 <body>
-<a href = "index.php"><p style = "display: inline; letter-spacing: -4px; font-size: 28pt; color: black; position: absolute; top: -30px;" class = "point">LangSwap</p></a>
+<a href = "index.php"><p class = "point lsw">LangSwap</p></a>
 <center>
 <div class = "wrapper">
 <form method = "post">
@@ -60,7 +85,7 @@ a{
 </select>
 	<input type="text" class="sear" 
 	placeholder="Search People..." id = "search" autocapitalize="off" style = "padding: 6px;">
-	<button class = "but" style = "padding: 10px;">Search</button>
+	<button class = "but" style = "padding: 10px; border: 0.5px solid gray;">Search</button>
 </div>
 
 
