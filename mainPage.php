@@ -3,7 +3,7 @@
 <head>
 <title>LangSwap - MainPage</title>
     <link rel = "icon" href = "https://freesvg.org/img/internet-web-browser.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
       .ro{
         margin-left: 10px;
@@ -261,19 +261,46 @@
       .noe{
         color: green;
         background-color: lightgreen;
-        padding: 1px;
+        padding: 5px;
         font-family: cursive;
         opacity:0.8;
       }
       .noe:hover{
         opacity:1;
       }
+      .img-banner{
+        display: none;
+      }
+      .lsw{
+        display: inline; 
+        letter-spacing: -4px; 
+        font-size: 20pt; 
+        color: black; 
+        float: left;
+      }
+      @media only screen and (min-width: 1100px){
+        .img-banner{
+          display: inline;
+        }
+        .lsw{
+          font-size: 28pt;
+        }
+      }
+      @media only screen and (max-width: 400px){
+        .lo{
+          font-size: 4pt;
+        }
+        .lsw{
+          font-size: 15pt;
+        }
+      }
+
 </style>
 </head>
 
 <body>
 <div id = "myHeader" class = "who">
-<p style = "display: inline; letter-spacing: -4px; font-size: 28pt; color: black; float: left;" class = "point">LangSwap</p><div id="google_translate_element" style = "float: left; margin-left: 10px; margin-top: 10px;"></div>
+<p class = "point lsw">LangSwap</p><div id="google_translate_element" style = "float: left; margin-left: 10px; margin-top: 10px;"></div>
 
 <script type="text/javascript">
 function googleTranslateElementInit() {
@@ -283,7 +310,7 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<div style = "position: absolute; left: 34.5%; top: 2px;"><form method = "post"><input type = "text" style = "display: inline; padding: 8px;" class = "sear" placeholder = "Search people..."><button class = "bar">&#128270;</button></form></div>
+<div style = "position: absolute; left: 34.5%; top: 2px;" class = "img-banner"><form method = "post"><input type = "text" style = "display: inline; padding: 8px;" class = "sear" placeholder = "Search people..."><button class = "bar">&#128270;</button></form></div>
 <a href = 'profile.php' class = 'lo'>👤</a>
 <a href = '#' class = 'lo' id='myBtn'>⚙️</a>
 <a href = '#' class = 'lo'>🔔</a>
@@ -320,7 +347,7 @@ function googleTranslateElementInit() {
 <center><div class = "rect"> 
 <!--<center><h2>Name</h2></center><center><p class = "alo"><b>Description</b><br> Hi Bye Peace................................................................. ........................................................ ..................................................... ......................................................</p></center><center><a href = "#" class="topL"></a> <br><button style = "display: flex; margin-left: 15px;" class = "new">Lang Swap</button><p>Native Language &rarr;</p><p>Language To Learn &rarr;</p></center><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a>-->
 
-<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: scroll; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">LangSwap</a></center>
+<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: scroll; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">Connect</a></center>
 
 
 
@@ -329,7 +356,7 @@ function googleTranslateElementInit() {
 <center><div class = "rect"> 
 <!--<center><h2>Name</h2></center><center><p class = "alo"><b>Description</b><br> Hi Bye Peace................................................................. ........................................................ ..................................................... ......................................................</p></center><center><a href = "#" class="topL"></a> <br><button style = "display: flex; margin-left: 15px;" class = "new">Lang Swap</button><p>Native Language &rarr;</p><p>Language To Learn &rarr;</p></center><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a>-->
 
-<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: scroll; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">LangSwap</a></center>
+<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: scroll; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">Connect</a></center>
 
 
 
@@ -337,7 +364,7 @@ function googleTranslateElementInit() {
 </div><br><br><center><div class = "rect"> 
 <!--<center><h2>Name</h2></center><center><p class = "alo"><b>Description</b><br> Hi Bye Peace................................................................. ........................................................ ..................................................... ......................................................</p></center><center><a href = "#" class="topL"></a> <br><button style = "display: flex; margin-left: 15px;" class = "new">Lang Swap</button><p>Native Language &rarr;</p><p>Language To Learn &rarr;</p></center><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a>-->
 
-<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: auto; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">LangSwap</a></center>
+<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: auto; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">Connect</a></center>
 
 
 
