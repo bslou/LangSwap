@@ -2,6 +2,10 @@
   <head>
   <link rel = "icon" href = "https://freesvg.org/img/internet-web-browser.png">
   <title>LangSwap - Profile</title>
+  <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<meta charset=utf-8 />
   <style>
     .rom{
       background-color: lightblue;
@@ -69,19 +73,78 @@
   .borl{
     border: 1px solid black;
   }
+  *{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 70px; /* Location of the box */
+      left: 0;
+      top: 0;
+      text-align: center;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 30%;
+      -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
   </style>
   </head>
   <body>
+  
+
+  <!-- Modal content -->
+  
     <center>
     <div class = "rom">
     <div class="image-upload">
-    <a href = "mainPage.php" onclick = "got();"><p style = "display: inline; letter-spacing: -4px; font-size: 25pt; position: absolute; left: 91%; top: -30px; color: black;" class = "point">LangSwap</p></a>
-      <a href = "#" onclick = "ore();" style = "float: left; display: inline; font-size: 20pt;" class = "ol">⚙️</a>
+    <a href = "mainPage.php" onclick = "got();"><p style = "display: inline; letter-spacing: -4px; font-size: 25pt; position: absolute; left: 91%; top: 0px; color: black;" class = "point">LangSwap</p></a>
+      <a href = "#"  style = "float: left; display: inline; font-size: 20pt;" class = "ol" id='myBtn'>⚙️</a>
       <center><h3 style = "font-size: 30pt;">Change Profile</h3></center>
       
     
     </div>
     </center>
+    <!--
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <center><h1>Settings</h1><br><br>
+    <hr><br><a href = "#" class = "k">Change Password</a><br><br><hr><br><a href = "#" class = "k">Notifications</a><br><br><hr>
+    <br><a href = "index.php" class = "k">Log out</a><br><br><hr>  
+    
+    
+    </center>
+    <br>
+  </div>
+</div>-->
     <br>
     <!--Idk if form is necessary-->
     <div class= "borl" id = "hid" style = "position: absolute; text-align: center; width: 200px; height: auto; left: 43%; top: 30%;">
@@ -105,15 +168,15 @@
     <center>
       <div class="image-upload">
         <label for="file-input">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Circle-icons-profile.svg" style = "height: 80px; width: 100px;\" class = "hov"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Circle-icons-profile.svg" style = "height: 80px; width: 100px;\" id = "blah" class = "hov"/>
         </label>
-        <input type = "file" id = "file-input">
+        <input type='file' id = "file-input" onchange="readURL(this);" />
       </div>
       </center><br>
     <center>Change Name: <input type = "text" class = "o" id = "name"></center><br>
     <center>Change Email: <input type = "email" class = "o" id = "email"></center><br>
     <center>Change Password: <input type = "password" class = "o" id = "password"></center><br><center>
-    Language to Learn: <select style = "display: inline;" class = "ro" name = "lang" id = "lang1"><option value="EN" class="emoji"  selected>English</option>
+    Language to Learn: <select style = "display: inline;" class = "ro" name = "lang" id = "lang1"><option value="SL" class="emoji"> Select Option</option><option value="EN" class="emoji"  selected>English</option>
 				<option value="AF" class="emoji"> Afrikaans</option>
 				<option value="AL" class="emoji" >Albanian</option>
 				<option value="AM" class="emoji" >Amharic</option>
@@ -217,5 +280,20 @@
         window.location = "mainPage.php";
       }
     }
+    </script>
+    <script> function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(150)
+                        .height(200);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }</script>
   </body>
 </html>
