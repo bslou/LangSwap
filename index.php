@@ -709,7 +709,7 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-</div><div style = "position: absolute; left: 34.5%; top: 2px;" class = "img-banner"><form method = "post"><input type = "text" style = "display: inline; padding: 8px;" class = "sear" placeholder = "Search people..."><button class = "bar">&#128270;</button></form></div>
+</div><div style = "position: absolute; left: 34.5%; top: 2px;" class = "img-banner"><form method = "POST"><input type = "text" style = "display: inline; padding: 8px;" class = "sear" placeholder = "Search people..."><button class = "bar">&#128270;</button></form></div>
 
     <button class = "but" style = "float: right; margin-top: 10px;" onclick = "document.getElementById('modal-wrapper2').style.display='block'">Join Now</button>
     <button class = "buto" style = "float: right; margin-top: 10px;" onclick="document.getElementById('modal-wrapper').style.display='block'">Log-in</button>
@@ -730,7 +730,7 @@ function googleTranslateElementInit() {
 
   <div id="modal-wrapper2" class="modal">
 
-<form class="modal-content animate" action="mainPage.php" onsubmit = "return checkforblank();" autocomplete="off">
+<form class="modal-content animate" action="storeReg.php" onsubmit = "return checkforblank();" autocomplete="off" method = "POST">
 
 <div class="imgcontainer">
 <span onclick="document.getElementById('modal-wrapper2').style.display='none'" class="close" title="Close PopUp">&times;</span>
@@ -743,9 +743,10 @@ function googleTranslateElementInit() {
 <input type="text" placeholder="Enter Firstname" name="name" class = "pkpk" id = "fname" Title = "Please fill out this field">
 <input type="text" placeholder="Enter Email" name="email" class = "pkpk" id = "email" Title = "Please fill out this field">
 <input type="password" placeholder="Enter Password (At least 6 characters)" name="psw" class = "pkpk" id = "pass" Title = "Please fill out this field">
+
 <center>
 <label for = "lang"><b>Native Language:</b></label> 
-  <select style = "display: inline;" class = "ro" name = "lang" id = "lang1"><option value="EN" class="emoji"  selected>English</option>
+  <select style = "display: inline;" class = "ro" name = "lang1" id = "lang1"><option value="EN" class="emoji"  selected>English</option>
 				<option value="AF" class="emoji"> Afrikaans</option>
 				<option value="AL" class="emoji" >Albanian</option>
 				<option value="AM" class="emoji" >Amharic</option>
@@ -821,7 +822,7 @@ function googleTranslateElementInit() {
         <option value="WE" class="emoji" >Welsh</option>
         </select><br><br>
   <label for = "lang2"><b>Learn Language:</b></label> 
-<select style = "display: inline;" class = "ro" name = "lang" id = "lang1"><option value="EN" class="emoji"  >English</option>
+<select style = "display: inline;" class = "ro" name = "lang2" id = "lang1"><option value="EN" class="emoji"  >English</option>
 				<option value="AF" class="emoji"> Afrikaans</option>
 				<option value="AL" class="emoji" >Albanian</option>
 				<option value="AM" class="emoji" >Amharic</option>
@@ -909,7 +910,7 @@ function googleTranslateElementInit() {
 
   <div id="modal-wrapper" class="modal">
 
-<form class="modal-content animate" action="mainPage.php" onsubmit = "return checkforblankT();">
+<form class="modal-content animate" action="checkLog.php" onsubmit = "return checkforblankT();" method = "POST">
 
 <div class="imgcontainer">
 <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
@@ -918,7 +919,7 @@ function googleTranslateElementInit() {
 </div>
 <center><p id = "error2" style = "color: red; width: 300px; background-color: #F9E1E1; border-radius: 10px 10px 10px 10px;"></p></center>
 <div class="container">
-<input type="text" placeholder="Enter Username" name="uname" class = "pkpk" id = "username" Title = "Please fill out this field">
+<input type="text" placeholder="Enter Username" name="username" class = "pkpk" id = "username" Title = "Please fill out this field">
 <input type="password" placeholder="Enter Password" name="psw" class = "pkpk" id = "pword" Title = "Please fill out this field">
 <button class = "ok" type="submit">Log-in</button>
 <input type="checkbox" style="margin:26px 30px;"> Remember me
