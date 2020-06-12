@@ -1,4 +1,14 @@
 
+<?php
+$servername = "localhost";
+$usernam = "id13913676_admin";
+$password = "Benya12152003!";
+$dbname = "id13913676_langswap";
+$conn = mysqli_connect($servername, $usernam, $password, $dbname);
+$query = "SELECT * FROM register";
+$result = mysqli_query($conn, $query);
+
+?>
 <html>
 <head>
 <title>LangSwap - MainPage</title>
@@ -322,7 +332,7 @@ function googleTranslateElementInit() {
     <span class="close">&times;</span>
     <center><h1>Settings</h1><br><br>
     <hr><br><a href = "#" class = "k">Change Password</a><br><br><hr><br><a href = "#" class = "k">Notifications</a><br><br><hr>
-    <br><a href = "index.php" class = "k">Log out</a><br><br><hr>  
+    <br><a href = "logout.php" class = "k" name = "logout">Log out</a><br><br><hr>  
     
     
     </center>
@@ -344,27 +354,21 @@ function googleTranslateElementInit() {
 </table>
 </center>
 <br>
+<?php 
+while ($rows = mysqli_fetch_assoc($result)){
+    ?>
 <center><div class = "rect"> 
-<!--<center><h2>Name</h2></center><center><p class = "alo"><b>Description</b><br> Hi Bye Peace................................................................. ........................................................ ..................................................... ......................................................</p></center><center><a href = "#" class="topL"></a> <br><button style = "display: flex; margin-left: 15px;" class = "new">Lang Swap</button><p>Native Language &rarr;</p><p>Language To Learn &rarr;</p></center><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a>-->
-
-<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: scroll; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">Connect</a></center>
+<center><a href = "#"><img src = "https://www.inbenta.com/wp-content/themes/inbenta/img/icons/avatar.svg?ver=2" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;"><?php echo ucfirst($rows['firstname']); ?></h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: scroll; border: 0.1px solid black;"><b>Description </b><br><?php echo ucfirst($rows['description']); ?><br></p></center><br><p>Native Language &rarr; <?php echo $rows['native']; ?></p><p>Language to Learn &rarr; <?php echo $rows['learn']; ?></p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "chat.php" class = "noe">Connect</a></center>
 
 
 
 
-</div><br><br>
-<center><div class = "rect"> 
-<!--<center><h2>Name</h2></center><center><p class = "alo"><b>Description</b><br> Hi Bye Peace................................................................. ........................................................ ..................................................... ......................................................</p></center><center><a href = "#" class="topL"></a> <br><button style = "display: flex; margin-left: 15px;" class = "new">Lang Swap</button><p>Native Language &rarr;</p><p>Language To Learn &rarr;</p></center><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a>-->
+</div>
+<?php
+} 
+?>
 
-<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: scroll; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">Connect</a></center>
-
-
-
-
-</div><br><br><center><div class = "rect"> 
-<!--<center><h2>Name</h2></center><center><p class = "alo"><b>Description</b><br> Hi Bye Peace................................................................. ........................................................ ..................................................... ......................................................</p></center><center><a href = "#" class="topL"></a> <br><button style = "display: flex; margin-left: 15px;" class = "new">Lang Swap</button><p>Native Language &rarr;</p><p>Language To Learn &rarr;</p></center><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a>-->
-
-<center><a href = "#"><img src = "" alt = "Profile" class = "fd"></a></center><center><h2 style = "letter-spacing: 3px; font-family: cursive; display: inline;">Name</h2></center><br><center><p style = "max-width: 600px; height: 100px; overflow: auto; border: 0.1px solid black;"><b>Description </b>.............................................................................................................................. ................ ........................................................................... ........ ................................. ................. ........................................................................... .......................................................................... ....<br></p></center><br><p>Native Language &rarr;</p><p>Language to Learn &rarr;</p><a href = "#" class = "pmo">💬</a><a href = "#" class = "pmo">📞</a><br><center><a href = "#" class = "noe">Connect</a></center>
+<br><br>
 
 
 
